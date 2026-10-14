@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cuaderno de tinta</title>
+<meta name="description" content="Poesía y escritos.">
+<style>
+:root{
+  /* ===== COLORES: cambia solo estos valores para adaptar el sitio ===== */
+  --bg:#f7f8fb;       /* fondo de la página */
+  --surface:#ffffff;  /* fondo de cada escrito */
+  --text:#262b36;     /* texto principal y títulos */
+  --muted:#707786;    /* fechas, subtítulo, citas, pies de foto */
+  --accent:#3a4aa6;   /* enlaces, h5 y línea de las citas */
+  --line:#e3e6ee;     /* bordes y separadores */
+  /* ===== FORMA ===== */
+  --radius:8px;       /* esquinas de escritos e imágenes */
+  color-scheme:light;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:1.125rem;line-height:1.75}
+main{max-width:38rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+
+/* Títulos */
+h1,h2,h3,h4,h5,h6{font-weight:600;line-height:1.2;margin:2.2em 0 .6em;color:var(--text);text-wrap:balance}
+h1{font-size:clamp(2.4rem,9vw,3.6rem);font-weight:400;font-style:italic;letter-spacing:-.02em;margin:0 0 .3em}
+h2{font-size:clamp(1.7rem,6vw,2.1rem);font-weight:500;letter-spacing:-.01em;margin-top:0}
+h3{font-size:1.45rem;font-style:italic;font-weight:500}
+h4{font-size:1.2rem}
+h5{font-family:var(--sans);font-size:.95rem;letter-spacing:.02em;color:var(--accent)}
+h6{font-family:var(--sans);font-size:.85rem;font-weight:500;color:var(--muted)}
+
+/* Texto */
+p{margin:0 0 1.2em}
+strong{font-weight:700}
+em{font-style:italic}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+small,.fecha{font-family:var(--sans);font-size:.85rem;color:var(--muted)}
+blockquote{margin:1.6em 0;padding:.2em 0 .2em 1.2em;border-left:3px solid var(--accent);font-style:italic;color:var(--muted)}
+blockquote p{margin:0}
+ul,ol{padding-left:1.4em;margin:0 0 1.2em}
+li{margin-bottom:.3em}
+hr{border:0;border-top:1px solid var(--line);margin:4rem 0}
+
+/* Estructura */
+.cabecera{margin-bottom:4rem}
+.cabecera p{font-style:italic;color:var(--muted);margin:0}
+article{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.5rem}
+article + article{margin-top:2.5rem}
+.fecha{display:block;margin:.4rem 0 1.8rem}
+
+/* Imágenes */
+figure{margin:1.8em 0}
+img{display:block;max-width:100%;height:auto;border-radius:var(--radius)}
+figcaption{font-family:var(--sans);font-size:.85rem;color:var(--muted);margin-top:.6rem;text-align:center}
+
+/* Poesía */
+.poema p{margin:0 0 1.6em;line-height:1.7}
+.poema{padding-left:.25rem}
+.resaltado{display: inline-block;background-color: #fbd500;}
+
+@media (min-width:640px){
+  body{font-size:1.2rem}
+  main{padding-top:5rem}
+  article{padding:2.8rem 3rem}
+}
+</style>
+</head>
+<body>
+<main>
+  <header class="cabecera">
+    <p><b>Notas de Boyd</b></p>
+    <h1>No Me Dejan Salir</h1>
+
+  </header>
+
+
+  <article>
+    <h2>Mi abuela sabe llorar</h2>
+    <div class="poema">
+      <p>Mi abuela odia a Fujimori <br> alguien llegara y le preguntara el porque<br> muy posiblemente ella no sepa que decirle.  <br>
+      Ella no sabe mucho de economía ni de privatización, <br>ni de leyes, ni recesión ni nada de eso.</p>
+
+
+      <p> No lo odia por lo que todos creen que lo hace, <br>ni por las tesis larguísimas de los periodistas, <br> no le tiene envidia e incluso cree que <br>
+      la reforma económica que casi mata a sus hijas,  <br> no fue su totalmente culpa.</p>  
+      <p><span class="resaltado">Lo odia porque odia las mentiras </span><br>lo odia porque no soporta que se le haga tanto daño <br> a la gente que confió en ti. <br> Ella nunca le creyó, lamentablemente los hombres<br>  
+      ya la habían traicionado desde que ella tenia 6 años <br> ¿que diferencia había ahora que llevaban una camisa?</p>
+
+
+      <p>La desgracia había llego a su vida <br>mucho antes que la hiperinflación al país. <br>A veces ella suele ver reportajes en donde <br> hombres con corbata justifican todo con un: <br> <span class="resaltado"> "No existía otra forma de hacer las cosas".</span><br>
+      Ella los mira con el disgusto y melancolía caracteristico <br> de las mujeres de los antiguos pueblos de Ancash  <br> quienes mordiéndose la lengua tenían que aguantar <br>
+      todo el abuso y maltrato de parte de los hombres <br> que supuestamente debían protegerlas.</p>
+
+  
+      <p>Después de todo a los 6 años su padre la regalo, <br> la dejo en una casa ajena, como una sirvienta, <br> ya que su madrastra la golpeaba brutalmente todos los dias.<br>  
+      En aquella casa fue acogida por una bella mujer <br> quien la adopto y la trato como su propia hija, <br> la llevo a la escuela, la baño y la vistió.  <br>
+      Lamentablemente fue en esa misma casa  <br> donde fue tomada a la fuerza, de forma sexual <br> por aquellos sucios brazos del marido   <br> de la única mujer que realmente quería ayudarla.<br>  
+      Aquel hombre le dijo con un tono serio: <br> "veo que ya te estas haciendo una mujer" <br> ella tenia tan solo 11 años.  </p>
+
+
+      <p>Se tuvo que escapar de ese lugar  <br>sin decirle nada a aquella noble mujer  <br> ya que un ser tan bueno  <br> no merecía saber que su esposo era un degenerado.<br>
+      Cuando aquella niña pregunto: <br> <b><span class="resaltado">¿Porque me haces esto?</span></b> <br> aquellos hombres le dijeron:  <br> <span class="resaltado">"Ay! Eugenia, no tengo otra opción".</span></p>
+
+
+      <p>Mi abuela siempre supo que había otra manera, <br> siempre supo que las cosas se podrían conversar,  <br> cuando escucha las razones de los expertos <br> para justificar aquel "shock" economico  
+      <br>que dejo a sus hijas de hambre por meses,  <br> se queja disimuladamente con la mirada. <br> Tampoco niega el resultado del plan  <br> acepta que sus nietos lograron estudiar <br> vestir, comer y vivir mejor que ella,  <br> gracias a aquel acto atroz.  </p>
+
+
+      <p>Ella no odia a Fujimori por resentimiento,  <br> no lo odia porque regalo empresas en quiebra  <br> ni por sus estrategias maquiavelicas.  <br> Después de todo era una guerra ... ¿no?  <br> Lo odia porque le hizo recordar a todas  <br>
+      las personas que le hicieron daño, <br> detesta los partidos políticos porque  <br> para ella las mentiras son la cosa mas repugnante, <br> y en su país hay que mentir para ganar, <br> ella no odia al gobierno, solo detesta aquellas  <br> conversaciones bajo la mesa, donde abundan ideas <br> 
+      como que "en la política sobrevive el mas vivo". <br> "El pez grande se come al pez chico".<br> Odia toda dinamica donde se te reprima <br> solo por ser como eres.</p>
+
+
+      <p> Aun así ella es el ser mas amoroso que conozco,  <br> nunca la vi llorar cuando murió su papá.  <br> Jamas se inmuto cuando el abuelo agonizaba <br> en alguna cama de EsSalud, <br> mientras la neumonia que contrajo por la  <br> pésima calidad de salubridad del seguro,  <br> lo carcomía por dentro. </p>
+
+
+      <p> La primera vez que la vi llorar  <br> fue cuando me caí de la bicicleta a los 6 años,  <br> ella derramaba lagrimas y a su vez limpiaba mi rodilla, <br> después me abrazo y me dio de comer.  <br> La vida le dio muchas hijas,  <br> pero también muchos nietos varones,  <br> tenia todo el derecho de odiarnos,  <br>
+      de vernos como depredadores,  <br> como seres que solo causan desgracias, <br> despues de todo, todos sus nietos <br> pertenecíamos al genero que desgracio su vida. <br> Su resentimiento estaba justificado, <br> sin embargo nunca lo hizo.<br> </p>
+      
+      <p>Entonces quiero que me digan <br><span class="resaltado">¿Como puedo odiar después de haber recibido tanto amor? </span><br> De parte de una persona que tenia todo el permiso de Dios  <br> para detestarme.</p>
+    </div>
+  </article>
+
+
+  <article>
+    <h2>Las habladurias del mundo.</h2>
+    <div class="poema">
+      <p>Nadie habla de lo dificil que es <br> conectar con una persona otra vez <br> lo confuso que se siente volver a querer<br>
+      es como ver un sorbo del cafe <br> sin saber que tan caliente esta <br> sujetar unas nuevas manos <br> sin saber si te vas a quemar. <br>
+      y besar otros labios <br> que se abren camino hacia lo desconocido.</p>
+
+      <p>Y me paralizo <br> pero no de miedo <br> sino que no entiendo <br> si realmente estoy queriendo de nuevo <br> si enserio por fin de tu ilusion me alejo<br>
+      ¿Como es que te guste alguien de nuevo?<br> me lo pregunto todo el tiempo <br> aunque no se si quiero saberlo <br> porque saltar con los ojos cerrados <br> confiar en otras manos <br>
+      y olvidarte de lo que esta existiendo <br> es en algun punto mas placentero <br> que en algun punto saber todo esto.</p>
+
+    </div>
+  </article>
+
+<!--
+  <article>
+    <h2>Lo que dejó la lluvia</h2>
+    <span class="fecha">12 de octubre de 2026</span>
+    <div class="poema">
+      <p>Llegó sin avisar,<br>como llegan las cosas que importan,<br>y se quedó en los techos<br>escribiendo con dedos de agua.</p>
+      <p>Yo la escuché desde la cama,<br>sin ganas de entender nada,<br>solo de ser un poco menos mío<br>y un poco más del ruido.</p>
+      <p>Cuando paró, quedó la calle<br>brillando como un recuerdo,<br>y en cada charco, el cielo<br>aprendiendo a ser pequeño.</p>
+    </div>
+  </article>
+
+  <article>
+    <h2>Escribir despacio</h2>
+    <span class="fecha">3 de octubre de 2026</span>
+    <p>Hay días en que las palabras llegan en fila, y otros en que hay que ir a buscarlas una por una. Aprendí que los segundos no son peores que los primeros: solo piden más <em>paciencia</em>.</p>
+
+    <h3>El primer borrador</h3>
+    <p>Es un lugar donde se permite equivocarse. No busco que suene bien, busco que suene <strong>verdadero</strong>. Lo demás vendrá después, con calma.</p>
+
+    <blockquote><p>Escribir es dejar que el silencio también tenga voz.</p></blockquote>
+
+    <h3>Lo que sí me ayuda</h3>
+    <h4>Antes de empezar</h4>
+    <ul>
+      <li>Una taza de algo caliente.</li>
+      <li>El teléfono lejos.</li>
+      <li>Ninguna meta de páginas.</li>
+    </ul>
+    <h4>Al terminar</h4>
+    <p>Dejar el texto reposar una noche y leerlo en voz alta al día siguiente. Lo que tropieza, se corrige.</p>
+  </article>
+
+  <article>
+    <h2>Pequeña casa</h2>
+    <span class="fecha">28 de septiembre de 2026</span>
+
+    <figure>
+      <img loading="lazy" width="800" height="450" alt="Ilustración de un paisaje azul con un sol pequeño" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23dfe6f7'/%3E%3Ccircle cx='620' cy='120' r='50' fill='%23f6d98a'/%3E%3Cpath d='M0 330 Q200 270 400 320 T800 300 V450 H0Z' fill='%23a9b8e6'/%3E%3Cpath d='M0 380 Q250 330 500 375 T800 360 V450 H0Z' fill='%233a4aa6'/%3E%3C/svg%3E">
+      <figcaption>Pie de foto opcional.</figcaption>
+    </figure>
+    <div class="poema">
+      <p>Una ventana, una silla,<br>un cuaderno sin estrenar.<br>No necesito más mundo<br>para empezar a nombrarlo.</p>
+    </div>
+  </article>
+
+  --->
+</main>
+</body>
+</html>
